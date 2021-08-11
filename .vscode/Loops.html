@@ -37,13 +37,24 @@
       //     console.log(i);  
       //   }
     
+
+// Promise/////////////////////////////////////////////////
+function abc(val){
+  return new Promise(function(resolve,reject){
+    if(val){
+      resolve("its resolve")
+    }else{reject("its not resolve")}
+  })
+}
+abc(true).then((a)=>console.log(a))
+
       //filter...........///////////////////////////////////////////
-      const array=[10,20,30,40,50,60,70]
+      // const array=[10,20,30,40,50,60,70]
        
-      array.filter(myfun)
-      function myfun(val){
-        if(val<=30){console.log(val)}
-      }
+      // array.filter(myfun)
+      // function myfun(val){
+      //   if(val<=30){console.log(val)}
+      // }
 
 
 
