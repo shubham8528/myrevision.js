@@ -5,7 +5,7 @@
   </head>
   <body>
     <script>
-      //  //for loop////////////////////
+      //  //for loop/////////////////////////////////////////////////////////////////////////////////////
 
       //    let array=[[10,20],[30,40]]
 
@@ -15,13 +15,13 @@
 
       // //     }
 
-      // //forEach///////////////////////
+      // //forEach////////////////////////////////////////////////////////////////////////////////////
       //     const array=[10,20,30,40,50,60,70]
 
       //     const a= array.forEach((val)=>console.log(val))
       // console.log(a)                                       ////////..Not given new array///////////
 
-      // //map///////////////////////////////////////
+      // //map//////////////////////////////////////////////////////////////////////////////////////////////
       // const array=[10,20,30,40,50,60,70]
 
       // const a= array.map((val)=>(val))
@@ -29,37 +29,104 @@
       // const b=a.map((result)=>(`${result+10}`))
       // console.log(b)                                      ////////.. given new array///////////
 
-      // /////for of/////////////////////////////////////
+      // Promise//////////////////////////////////////////////////////////////////////////////////////////////////
+
+      // function abc(val){
+      //   return new Promise(function(resolve,reject){
+      //     if(val){
+      //       resolve("its resolve")
+      //     }else{reject("its not resolve")}
+      //   })
+      // }
+      // abc(false).then((a)=>console.log(a))
+      // /////for of///////////////////////////////////////////////////////////////////////////////////////////////
 
       // const array = "shubham bisht";
- 
+
       //   for (var i of  array) {
-      //     console.log(i);  
+      //     console.log(i);
       //   }
-    
 
-// Promise/////////////////////////////////////////////////
-function abc(val){
-  return new Promise(function(resolve,reject){
-    if(val){
-      resolve("its resolve")
-    }else{reject("its not resolve")}
-  })
-}
-abc(true).then((a)=>console.log(a))
-
-      //filter...........///////////////////////////////////////////
+      //filter.........../////////////////////////////////////////////////////////////////////////////////////////////
       // const array=[10,20,30,40,50,60,70]
-       
+
       // array.filter(myfun)
       // function myfun(val){
       //   if(val<=30){console.log(val)}
       // }
 
+      // const myfunction= (name,age,salary,heading)=>{
+      //   return new Promise((resolve,reject)=>{
+      //   resolve(`<h1 style=text-align:center>${heading}</h1><p style=padding:20px 50px >Name => ${name}<br>Age=>${age}<br>Salary=>${salary}</p>`)
+
+      // })}
+
+      // myfunction("shubham",25,20000,"Detail of all Emoloye").then((retrn)=>document.write(retrn)).catch((result)=>console.log("Somting is Error not found the result error.............. "))
+      // myfunction("saksham",20,10000,"").then((retrn)=>document.write(retrn)).catch((result)=>console.log("Somting is Error not found the result error.............. "))
+      // myfunction("rashika",30,4000,"").then((retrn)=>document.write(retrn)).catch((result)=>console.log("Somting is Error not found the result error.............. "))
+
+      //  class and object//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      // class myclass1 {
+      //   constructor(name, age) {
+      //     this.Name = name;
+      //     this.Age = age;
+      //   }
+
+      //   myfun() {
+      //     document.write(
+      //       `it is create function=>${this.Name} ${this.Age}<br> `
+      //     );
+      //   }
+      // }
+
+      // class myclass2 extends myclass1 {
+      //   myfun() {
+      //     super.myfun();
+      //     document.write(
+      //       `it is create function=>${this.Name} ${this.Age} <br>`
+      //     );
+      //   }
+      // }
+
+      // const obj = new myclass1("shubham", 20);
+      // const ob = new myclass2("saksham", 10);
+
+      // ob.myfun();
+
+      // obj.myfun();
+
+      ////////////////////////////////======== start array methods=========/////////////////////////////////
 
 
+// sort....
+// let arra=[2,5,7,10,3,5,4,20,8000, 30, 800]
+// arra.sort(function(a,b){a-b})
+// console.log(arra)
 
-      
+
+// // reverse...........
+// const array=[2,5,7,10,3,5,4,20,8000, 30, 800]
+// array.reverse(function(a,b){a-b})
+// console.log(array)
+
+//pop..........
+// const array=[2,5,7,10,3,5,4,20,8000, 30, 800]
+// array.pop()
+// console.log(array)
+
+
+// push......
+// const array=[2,5,7,10,3,5,4,20,8000, 30, 800]
+// array.push(7890)
+// console.log(array)
+
+//shift.......
+const array=["shubham","rohit","varun","priyanka"]
+array.shift()
+console.log(array)
+
+
     </script>
   </body>
 </html>
