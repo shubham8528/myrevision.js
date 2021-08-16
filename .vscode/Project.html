@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All-projects</title>
+    </head>
+    <style>
+* {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+    #outer-box {
+      margin: 0px;
+    }
+    .box {
+      width: 100vw;
+      height: 70vh;
+
+      margin: 50px 400px;
+    }
+
+    .inner-box {
+      border: 2px solid white;
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+
+      padding: 10px;
+    }
+
+    li {
+      list-style-type: none;
+      padding: 20px;
+      margin: 10px;
+    }
+    .index {
+      border: 2px solid black;
+    }
+    #ylo {
+      
+      display: none;
+      color: white;
+      font-size: 30px;
+      padding: 40px 500px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: inherit;
+      animation-name: color;
+    }
+    @keyframes color {
+      0% {
+        padding-left: 50px;
+      }
+      10% {
+        padding-left: 500px;
+      }
+    }
+    #grn {
+      
+      display: none;
+      color: white;
+      font-size: 30px;
+      padding: 40px 500px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: inherit;
+      animation-name: color2;
+    }
+
+    @keyframes color2 {
+      0% {
+        padding-left: 50px;
+      }
+      10% {
+        padding-left: 500px;
+      }
+    }
+    #blu {
+      
+      display: none;
+      color: white;
+      font-size: 30px;
+      padding: 40px 500px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: inherit;
+      animation-name: color3;
+    }
+
+    @keyframes color3 {
+      0% {
+        padding-left: 50px;
+      }
+      10% {
+        padding-left: 500px;
+      }
+    }
+    #bro {
+      display: none;
+      
+      font-size: 30px;
+      color: white;
+      padding: 40px 500px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: inherit;
+      animation-name: color4;
+    }
+    @keyframes color4 {
+      0% {
+        padding-left: 50px;
+      }
+      10% {
+        padding-left: 500px;
+      }
+    }
+    #ora {
+      
+      display: none;
+      color: white;
+      font-size: 30px;
+      padding: 40px 500px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: inherit;
+      animation-name: color5;
+    }
+
+    @keyframes color5 {
+      0% {
+        padding-left: 50px;
+      }
+      10% {
+        padding-left: 500px;
+      }
+    }
+    
+    </style>
+    <body id="body-event">
+        
+   
+    <div>
+      <p id="ylo">BLACK-BACKGROUND</p>
+      <p id="grn">GREEN-BACKGROUND</p>
+      <p id="blu">BLUE-BACKGROUND</p>
+      <p id="bro">BROWN-BACKGROUND</p>
+      <p id="ora">ORANGE-BACKGROUND</p>
+    </div>
+    <div id="outer-box">
+      <div class="box">
+        <ul class="inner-box">
+          <li
+            class="index"
+            style="background-color: rgb(0, 0, 0); color: white; cursor: pointer;"
+            id="first"
+          >
+            yellow
+          </li>
+
+          <li
+            class="index"
+            style="background-color: rgb(0, 128, 0); color: white; cursor: pointer;"
+            id="second"
+          >
+            green
+          </li>
+
+          <li
+            class="index"
+            style="background-color: rgb(0, 0, 255); color: white; cursor: pointer;"
+            id="third"
+          >
+            blue
+          </li>
+
+          <li
+            class="index"
+            style="background-color: rgb(165, 42, 42); color: white; cursor: pointer;"
+            id="foure"
+          >
+            brown
+          </li>
+
+          <li
+            class="index"
+            style="background-color: rgb(255, 166, 0); color: white; cursor: pointer;"
+            id="five"
+          >
+            orange
+          </li>
+        </ul>
+        <button id="btnn" style="padding: 5px 10px; cursor: pointer; ">reset</button>
+      </div>
+    </div>
+
+
+
+    <h1>
+      <input type="text" value="shubham bisht" id="myInput">
+      <button id="myButton">copy Here</button>
+      </h1>
+
+    <script>
+const a=[20,10,40,20]
+    const b=["shubham","bisht","ravi","singh"]
+    const ab=a.concat(b)
+    console.log(ab)
+
+
+document.getElementById("myButton").addEventListener("click",abc)
+
+function abc(){
+  const val=document.getElementById("myInput")
+  const a=val.select()
+  a.setSelectionRange(0, 99999)
+  document.execCommand("copy")
+  console.log(val.value)
+}
+
+
+
+
+
+document.getElementById("btnn").addEventListener("click", button);
+      function button() {
+        document.getElementById("ylo").style.display = "";
+        document.getElementById("grn").style.display = "";
+        document.getElementById("blu").style.display = "";
+        document.getElementById("bro").style.display = "";
+        document.getElementById("ora").style.display = "";
+
+        document.getElementById("body-event").style.backgroundColor = "white";
+        document.getElementById("body-event").style.backgroundColor = "white";
+        document.getElementById("body-event").style.backgroundColor = "white";
+        document.getElementById("body-event").style.backgroundColor = "white";
+        document.getElementById("body-event").style.backgroundColor = "white";
+      }
+
+      document.getElementById("first").addEventListener("click", btn);
+      function btn() {
+        document.getElementById("body-event").style.backgroundColor = "black";
+        document.getElementById("ylo").style.display = "block";
+        document.getElementById("grn").style.display = "";
+        document.getElementById("blu").style.display = "";
+        document.getElementById("bro").style.display = "";
+        document.getElementById("ora").style.display = "";
+      }
+
+      document.getElementById("second").addEventListener("click", btn1);
+      function btn1() {
+        document.getElementById("body-event").style.backgroundColor = "green";
+        document.getElementById("grn").style.display = "block";
+        document.getElementById("ylo").style.display = "";
+        document.getElementById("bro").style.display = "";
+        document.getElementById("blu").style.display = "";
+        document.getElementById("ora").style.display = "";
+      }
+
+      document.getElementById("third").addEventListener("click", btn2);
+      function btn2() {
+        document.getElementById("body-event").style.backgroundColor = "blue";
+        document.getElementById("blu").style.display = "block";
+        document.getElementById("ylo").style.display = "";
+        document.getElementById("grn").style.display = "";
+        document.getElementById("bro").style.display = "";
+        document.getElementById("ora").style.display = "";
+      }
+
+      document.getElementById("foure").addEventListener("click", btn3);
+      function btn3() {
+        document.getElementById("body-event").style.backgroundColor = "brown";
+        document.getElementById("bro").style.display = "block";
+        document.getElementById("ylo").style.display = "";
+        document.getElementById("grn").style.display = "";
+        document.getElementById("blu").style.display = "";
+        document.getElementById("ora").style.display = "";
+      }
+
+      document.getElementById("five").addEventListener("click", btn4);
+      function btn4() {
+        document.getElementById("body-event").style.backgroundColor = "orange";
+        document.getElementById("ora").style.display = "block";
+        document.getElementById("bro").style.display = "";
+        document.getElementById("ylo").style.display = "";
+        document.getElementById("grn").style.display = "";
+        document.getElementById("blu").style.display = "";
+      }
+
+
+
+        </script>
+    </body>
+</html>
+
+

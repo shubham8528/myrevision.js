@@ -4,75 +4,11 @@
     <title>All---Loops</title>
   </head>
   <style>
-    * {
-      margin: 0px;
-      padding: 0px;
-    }
-    body {
-      width: 100vw;
-      height: 100vh;
-    }
-    .box {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .inner-box {
-      background-color: gray;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40%;
-      padding: 10px;
-    }
-
-    li {
-      list-style-type: none;
-      padding: 20px;
-      margin: 10px;
-    }
-    .index {
-      border: 2px solid black;
-    }
-    #ylo{
-      display: none;
-    }
-    #grn{
-      display: none;
-    }
-    #blu{
-      display: none;
-    }
-    #bro{
-      display: none;
-    }
-    #ora{
-      display: none;
-    }
+    
   </style>
-  <body id="body-event" >
-    <div>
-      <p id="ylo" >YELLOW</p>
-      <p id="grn">GREEN</p>
-      <p id="blu">BLUE</p>
-      <p id="bro">BROWN</p>
-      <p id="ora">ORANGE</p>
-    </div>
-    <div class="box">
-      <ul class="inner-box">
-        <li class="index"style="background-color: rgb(255, 255, 0)" id="first" onclick="abc()" onblur="xyz()" > yellow</li>
-        <li class="index"style="background-color: rgb(0, 128, 0)"id="second"  onclick="a()" onblur="x()">green </li>
-        <li class="index" style="background-color: rgb(0, 0, 255)" id="third" > blue</li>
-        <li class="index" style="background-color: rgb(165, 42, 42)"id="foure"> brown</li>
-        <li class="index"style="background-color: rgb(255, 166, 0)" id="five"  > orange </li>
-      </ul>
-    </div>
-
+ <body>
     <!-- <div style="border: 2px solid black; width: 500px;height: 500px;">
-      <img src="http://animereviews.co/wp-content/uploads/2012/12/figma-Link.jpg" style="max-width: 500px; max-height: 500px; ">
+  <img src="http://animereviews.co/wp-content/uploads/2012/12/figma-Link.jpg" style="max-width: 500px; max-height: 500px; ">
       </div> -->
     <!-- <div class="box">
       <ul class="inner-box">
@@ -83,72 +19,16 @@
         <li class="index index4" id="five" onclick="myevent(id)">e</li>
       </ul>
     </div> -->
+  <script>
 
-    <script>
-        function abc(){
-          document.getElementById("ylo").style.display="block"
-        }
-        
-        function xyz(){
-          document.getElementById("ylo").style.remove()
-        }
-
-        function a(){
-          document.getElementById("grn").style.display="block"
-        }
-        
-        function x(){
-          document.getElementById("grn").style.remove()
-        }
-        
-        
+ 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      document.getElementById("first").addEventListener("click", function () {
-        document.getElementById("body-event").style.backgroundColor = "yellow";
-        
-     
-
-      });
-      document.getElementById("second").addEventListener("click", function () {
-        document.getElementById("body-event").style.backgroundColor = "green";
-        
-      
-      });
-      document.getElementById("third").addEventListener("click", function () {
-        document.getElementById("body-event").style.backgroundColor = "blue";
-       
-      });
-      document.getElementById("foure").addEventListener("click", function () {
-        document.getElementById("body-event").style.backgroundColor = "brown";
-        document.getElementById("bro").style.display="block"
-      });
-
-      
-      document.getElementById("five").addEventListener("click", function () {
-        document.getElementById("body-event").style.backgroundColor = "orange";
-        document.getElementById("ora").style.display="block"
-      });
-
-   
-
-
-
-
+  // document.getElementById("five").addEventListener("click", function () {
+      //   document.getElementById("body-event").style.backgroundColor = "orange";
+      //   document.getElementById("ora").style.display="block"
+      // });
 
       // var id = "jans"
       // function myevent(id) {
@@ -273,6 +153,50 @@
       // const array=["shubham","`rohit","varun","priyanka"]
       // array.shift()
       // console.log(array)
+
+      // var array=[2,5,7,10,3,5,4]
+      // var array1=[20,8000, 30, 800]
+      //  const newArray=array.concat(array1)
+      //  document.write(newArray)
+
+      //  var array=[2,5,7,10,3,5,4]
+     
+      //  const newArray=array.join("-")
+      //  document.write(newArray)
+var num=10
+var str=""
+for(var a=0; a<=7; a++){
+  for(var b=0; b<=7-a; b++){
+    str+=""
+  }
+  for(var c=0; c<2*a-1;c++){
+    str+="*"
+  }
+ str+="<br>"
+}
+console.log(str+"<br>")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // imp/////////
+
+      // const array=[2,3,1,4,3,3,4,5,"shubham","saksham","ravi","saksham"]
+      // const aryunique=[...new Set(array)]
+      // console.log(aryunique)
+
     </script>
   </body>
 </html>
