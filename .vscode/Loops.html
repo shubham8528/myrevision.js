@@ -7,7 +7,7 @@
     
   </style>
  <body>
-    <!-- <div style="border: 2px solid black; width: 500px;height: 500px;">
+     <!-- <div style="border: 2px solid black; width: 500px;height: 500px;">
   <img src="http://animereviews.co/wp-content/uploads/2012/12/figma-Link.jpg" style="max-width: 500px; max-height: 500px; ">
       </div> -->
     <!-- <div class="box">
@@ -19,9 +19,18 @@
         <li class="index index4" id="five" onclick="myevent(id)">e</li>
       </ul>
     </div> -->
+
   <script>
 
- 
+const getVal1=prompt("plzz enter First number=>>>>")
+const getVal2=prompt("plzz enter Second number=>>>>")
+const num=100;
+
+let newval=Number(getVal1)+Number(getVal2)
+alert(newval)
+if(newval==num || getVal1==num || getVal2==num ){
+   alert("true")
+}else{alert("false")}
 
 
 
@@ -153,28 +162,79 @@
       // const array=["shubham","`rohit","varun","priyanka"]
       // array.shift()
       // console.log(array)
-
+          
+      //  Concat........
       // var array=[2,5,7,10,3,5,4]
       // var array1=[20,8000, 30, 800]
       //  const newArray=array.concat(array1)
       //  document.write(newArray)
 
-      //  var array=[2,5,7,10,3,5,4]
-     
+      //join..........
+      //  var array=[2,5,7,10,3,5,4]     
       //  const newArray=array.join("-")
       //  document.write(newArray)
-var num=10
-var str=""
-for(var a=0; a<=7; a++){
-  for(var b=0; b<=7-a; b++){
-    str+=""
-  }
-  for(var c=0; c<2*a-1;c++){
-    str+="*"
-  }
- str+="<br>"
-}
-console.log(str+"<br>")
+
+      //Slice......
+      // const array=["shubham","`rohit","varun","priyanka"]
+      // const newarray=array.slice(0,3)
+      // console.log(newarray)
+
+
+      //Splice........
+      // const array=["shubham","`rohit","varun","priyanka"]
+
+      // array.splice(1,2,"shubham","bisht")
+      // console.log(array)
+
+                          
+    // indexOf........
+    // const array=["shubham","varun","rohit","varun","priyanka"]
+    // const newarray=array.indexOf("varun",2)
+    // console.log(newarray)
+
+    
+   //lastIndexOf....
+  //  const array=["shubham","varun","rohit","varun","priyanka"]
+  //  const a=array.lastIndexOf("shubham")
+  //  console.log(a)
+
+   //include...........
+    
+  //  const arrays=["Ram","Aman","Sunil","Rohan"]
+  // const a=arrays.includes("Ram")
+  
+  // console.log(a)
+       
+
+// const array=[20,21,90,20,"shubham","ravi","shubham"]
+
+
+
+//  const arr = array.filter(abc)
+
+//  function abc(item, index, arry){
+//    console.log(arry.indexOf(item));
+//    return arry.indexOf(item) == index
+//  }
+
+//  console.log(arr);
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
