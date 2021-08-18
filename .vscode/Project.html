@@ -206,27 +206,27 @@
       </h1>
 
     <script>
-const a=[20,10,40,20]
-    const b=["shubham","bisht","ravi","singh"]
-    const ab=a.concat(b)
-    console.log(ab)
+      
+      const a=[20,10,40,20]
+          const b=["shubham","bisht","ravi","singh"]
+          const ab=a.concat(b)
+          console.log(ab)
+
+      document.getElementById("myButton").addEventListener("click",abc)
+      
+      function abc(){
+        const val=document.getElementById("myInput")
+        const a=val.select()
+        a.setSelectionRange(0, 99999)
+        document.execCommand("copy")
+        console.log(val.value)
+      }  
+
+      
 
 
-document.getElementById("myButton").addEventListener("click",abc)
 
-function abc(){
-  const val=document.getElementById("myInput")
-  const a=val.select()
-  a.setSelectionRange(0, 99999)
-  document.execCommand("copy")
-  console.log(val.value)
-}
-
-
-
-
-
-document.getElementById("btnn").addEventListener("click", button);
+      document.getElementById("btnn").addEventListener("click", button);
       function button() {
         document.getElementById("ylo").style.display = "";
         document.getElementById("grn").style.display = "";
@@ -290,6 +290,7 @@ document.getElementById("btnn").addEventListener("click", button);
         document.getElementById("grn").style.display = "";
         document.getElementById("blu").style.display = "";
       }
+
 
 
 
