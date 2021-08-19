@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <style>
+    #uppr-body {
+      background-image: url(https://scontent-del1-1.xx.fbcdn.net/v/t1.6435-9/116711533_576147663057902_6275754748500912034_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=e3f864&_nc_ohc=uJUAh5ZteBoAX_Tokk8&_nc_ht=scontent-del1-1.xx&oh=7705a77fc3246bf9983d472bb2f44ba7&oe=6144B0BF);
+
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    #banner {
+      margin-top: 10%;
+    }
+    #box {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    .mini-box {
+      padding: 13px;
+      text-align: center;
+      width: 100px;
+      height: 50px;
+      margin: 0px 10px;
+      border: 2px solid white;
+      box-sizing: border-box;
+    }
+    #head{
+      color: rgb(136, 7, 7);
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      font-size: 50px;
+    }
+  </style>
+  <body id="uppr-body">
+    <h1 id=head>Welcome To TomorrowLand</h1>
+    <div id="banner">
+      <ul id="box">
+        <li class="mini-box" id="btn" onclick="play('a')">A</li>
+        <li class="mini-box" onclick="play('b')">B</li>
+        <li class="mini-box" onclick="play('c')">C</li>
+        <li class="mini-box" onclick="play('d')">D</li>
+        <li class="mini-box" onclick="play('e')">E</li>
+      </ul>
+
+    
+    </div>
+
+    <!-- all audios -->
+    <audio id="a" class="c">
+      <source
+        src="http://commondatastorage.googleapis.com/codeskulptor-assets/Collision8-Bit.ogg"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="b" class="song">
+      <source
+        src="https://rpg.hamsterrepublic.com/wiki-images/7/72/Metal_Hit.ogg"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="c">
+      <source
+        src="http://codeskulptor-demos.commondatastorage.googleapis.com/descent/gotitem.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="d">
+      <source
+        src="https://rpg.hamsterrepublic.com/wiki-images/d/d7/Oddbounce.ogg"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="e">
+      <source
+        src=" http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/missile.ogg"
+        type="audio/mpeg"
+      />
+    </audio>
+    <script>
+      window.addEventListener("keydown", checkKeyPressed, false);
+
+      function checkKeyPressed(x) {
+        
+        if (x.keyCode == 65) {
+          console.log(x.key);
+          var b = document.getElementById(x.key).play();
+        } else if (x.keyCode == 66) {
+          var b = document.getElementById(x.key).play();
+        } else if (x.keyCode == 67) {
+          var b = document.getElementById(x.key).play();
+        } else if (x.keyCode == 68) {
+          var b = document.getElementById(x.key).play();
+        }
+        else if(x.keyCode == 69){
+          var b = document.getElementById(x.key).play();
+        }
+      }
+
+      function play(e) {
+        var audio = document.getElementById(`${e}`);
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
