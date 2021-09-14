@@ -3,13 +3,9 @@
   <head>
     <title>All---Loops</title>
   </head>
-  <style>
-  
-
-  </style>
- <body>
-     <h1 class="animate">ball</h1>
-     <!-- <div style="border: 2px solid black; width: 500px;height: 500px;">
+  <style></style>
+  <body>
+    <!-- <div style="border: 2px solid black; width: 500px;height: 500px;">
   <img src="http://animereviews.co/wp-content/uploads/2012/12/figma-Link.jpg" style="max-width: 500px; max-height: 500px; ">
       </div> -->
     <!-- <div class="box">
@@ -22,26 +18,97 @@
       </ul>
     </div> -->
 
-  <script>
+    <script>
+      //            class listEmployee{
+      //             heading(){ document.write(`<h1 style="text-align:center">List Of All Employee</h1><br>`)}
+      //              constructor(name,age,post){
+      //                  this.myname=name
+      //                  this.myage=age
+      //                  this.mypost=post
 
+      //              }
 
-let array=[1,2,3,4]
+      //              mymessage(){{
 
-console.log(array.slice(1,2))
-  
+      // document.write(`<div style="border:2px solid black; width:250px; padding:10px; margin-bottom:10px">Employee Name=> ${this.myname} <br> Age=> ${this.myage} <br> post=> ${this.mypost}</div>`)
+      //              }
+      //            }}
+      //           const myemploye1=new listEmployee("shubham Bisht",23,"Software Engineer")
+      //           const myemploye2=new listEmployee("Rahul Nagi",28,"Software Tester")
+      //           const myemploye3=new listEmployee("Tajveer Rawat",33,"Project Manager")
+      //           const myemploye4=new listEmployee("Mohit Yadav",41,"Network Engineer")
 
+      //           myemploye1.heading()
+      //           myemploye1.mymessage()
+      //           myemploye2.mymessage()
+      //           myemploye3.mymessage()
+      //           myemploye4.mymessage()
 
-  
+      fetch("https://60dadebc801dcb0017290c2f.mockapi.io/todos", {
+        method: "post",
+        body: JSON.stringify({ id: 7, title: "rohan rawat" }),
+        headers: { "content-type": "application/json" },
+      })
+        .then((data) => data.json())
+        .then(function (getdata) {
+          for (var i in getdata) {
+            console.log(`${getdata[i].id} ${getdata[i].title} `);
+          }
+        });
 
+      //       class helloClass {
+      //         constructor() {
+      //           console.log("apply sucessfully constructor");
+      //         }
+      //         mymessage(){
+      //           console.log("apply sucessfully mymessage")
+      //         }
+      //         static mystatic(){
+      //           console.log("apply sucessfully mystatic")
+      //         }
 
+      //       }
+      //       const newhello=new helloClass()
+      //       newhello.mymessage()
+      // helloClass.mystatic()
 
+      // function myfun(num) {
+      //   return new Promise(function (resolve, reject) {
+      //     if (num == 10) {
+      //       console.log("this is equval to TEN");
+      //     resolve(20)
+      //     } else {
+      //       console.log("this is not equval");
+      //       reject(20)
+      //     }
+      //   });
+      // }
 
+      // myfun(10)
+      //   .then(function (result) {
+      //     console.log(result);
+      //   })
+      //   .catch(function (final) {
+      //     console.log("there is some error valuse part");
+      //   });
 
+      // const array = [
+      //   { x: 3, y: 2 },
+      //   { x: 5, y: 6 },
+      //   { x: 9, y: 4 },
+      //   { x: 1, y: 8 },
+      // ];
 
+      // for (var num in array) {
+      //   // console.log(array[num].x,array[num].y)
+      //   if (array[num].x < array[num].y) {
+      //     console.log(array[num].y);
 
+      //   }
 
+      // }
 
-  // document.getElementById("five").addEventListener("click", function () {
+      // document.getElementById("five").addEventListener("click", function () {
       //   document.getElementById("body-event").style.backgroundColor = "orange";
       //   document.getElementById("ora").style.display="block"
       // });
@@ -169,7 +236,7 @@ console.log(array.slice(1,2))
       // const array=["shubham","`rohit","varun","priyanka"]
       // array.shift()
       // console.log(array)
-          
+
       //  Concat........
       // var array=[2,5,7,10,3,5,4]
       // var array1=[20,8000, 30, 800]
@@ -177,7 +244,7 @@ console.log(array.slice(1,2))
       //  document.write(newArray)
 
       //join..........
-      //  var array=[2,5,7,10,3,5,4]     
+      //  var array=[2,5,7,10,3,5,4]
       //  const newArray=array.join("-")
       //  document.write(newArray)
 
@@ -186,77 +253,39 @@ console.log(array.slice(1,2))
       // const newarray=array.slice(0,3)
       // console.log(newarray)
 
-
       //Splice........
       // const array=["shubham","`rohit","varun","priyanka"]
 
       // array.splice(1,2,"shubham","bisht")
       // console.log(array)
 
-                          
-    // indexOf........
-    // const array=["shubham","varun","rohit","varun","priyanka"]
-    // const newarray=array.indexOf("varun",2)
-    // console.log(newarray)
+      // indexOf........
+      // const array=["shubham","varun","rohit","varun","priyanka"]
+      // const newarray=array.indexOf("varun",2)
+      // console.log(newarray)
 
-    
-   //lastIndexOf....
-  //  const array=["shubham","varun","rohit","varun","priyanka"]
-  //  const a=array.lastIndexOf("shubham")
-  //  console.log(a)
+      //lastIndexOf....
+      //  const array=["shubham","varun","rohit","varun","priyanka"]
+      //  const a=array.lastIndexOf("shubham")
+      //  console.log(a)
 
-   //include...........
-    
-  //  const arrays=["Ram","Aman","Sunil","Rohan"]
-  // const a=arrays.includes("Ram")
-  
-  // console.log(a)
-       
+      //include...........
 
-// const array=[20,21,90,20,"shubham","ravi","shubham"]
+      //  const arrays=["Ram","Aman","Sunil","Rohan"]
+      // const a=arrays.includes("Ram")
 
+      // console.log(a)
 
+      // const array=[20,21,90,20,"shubham","ravi","shubham"]
 
-//  const arr = array.filter(abc)
+      //  const arr = array.filter(abc)
 
-//  function abc(item, index, arry){
-//    console.log(arry.indexOf(item));
-//    return arry.indexOf(item) == index
-//  }
+      //  function abc(item, index, arry){
+      //    console.log(arry.indexOf(item));
+      //    return arry.indexOf(item) == index
+      //  }
 
-//  console.log(arr);
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      //  console.log(arr);
 
       // imp/////////
 
@@ -264,6 +293,7 @@ console.log(array.slice(1,2))
       // const aryunique=[...new Set(array)]
       // console.log(aryunique)
 
+      /////Revision////////////////////////////////////////////////////////////////////////////
     </script>
   </body>
 </html>

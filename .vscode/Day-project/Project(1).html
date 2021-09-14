@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <style>
@@ -18,7 +21,7 @@
     }
 
     #banner {
-      margin-top: 10%;
+      margin-top: 5%;
     }
     #box {
       display: flex;
@@ -34,15 +37,84 @@
       border: 2px solid white;
       box-sizing: border-box;
     }
-    #head{
-      color: rgb(136, 7, 7);
-      font-family: 'Pacifico', cursive;
+    #head1 {
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-size: 40px;
+      width: 240px;
+      height: 70px;
       text-align: center;
-      font-size: 50px;
+      background-color: black;
+      position: relative;
+      animation-name: myani;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+    }
+    @keyframes myani {
+      0% {
+        background-color: white;
+        top: 50px;
+        left: 0px;
+        
+      }
+      25% {
+        background-color: orange ;
+        top: 0px;
+    left: 0px;
+      }
+      100% {
+        background-color: black ;
+        left: 0px;
+        top: 0px;
+      }
+    }
+
+    #head2 {
+      background-color: black;
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-size: 40px;
+      width: 280px;
+      height: 70px;
+      position: relative;
+      animation-name: myanii;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+    }
+    @keyframes myanii {
+      0% {
+        background-color: white;
+        bottom: 50px;
+        left: 0px;
+      }
+      25% {
+        background-color: orange ;
+        bottom: 0px;
+    left: 0px;
+      }
+      100% {
+        background-color: black ;
+        left: 0px;
+        top:0px;
+      }
+    }
+
+    #anim {
+
+      padding-top: 10px;
+      margin: 20px 30px;
+      display: flex;
+      justify-content: center;
     }
   </style>
   <body id="uppr-body">
-    <h1 id=head>Welcome To TomorrowLand</h1>
+    <div id="anim">
+      <h1 id="head1">Welcome To</h1>
+      <h1 id="head2">TomorrowLand</h1>
+    </div>
+
     <div id="banner">
       <ul id="box">
         <li class="mini-box" id="btn" onclick="play('a')">A</li>
@@ -51,19 +123,17 @@
         <li class="mini-box" onclick="play('d')">D</li>
         <li class="mini-box" onclick="play('e')">E</li>
       </ul>
-
-    
     </div>
 
     <!-- all audios -->
-    <audio id="a" class="c">
+    <audio id="a" >
       <source
         src="http://commondatastorage.googleapis.com/codeskulptor-assets/Collision8-Bit.ogg"
         type="audio/mpeg"
       />
     </audio>
 
-    <audio id="b" class="song">
+    <audio id="b" >
       <source
         src="https://rpg.hamsterrepublic.com/wiki-images/7/72/Metal_Hit.ogg"
         type="audio/mpeg"
@@ -94,18 +164,16 @@
       window.addEventListener("keydown", checkKeyPressed, false);
 
       function checkKeyPressed(x) {
-        
         if (x.keyCode == 65) {
           console.log(x.key);
           var b = document.getElementById(x.key).play();
-        } else if (x.keyCode == 66) {
+        } else if (x.keyCode == 66){
           var b = document.getElementById(x.key).play();
-        } else if (x.keyCode == 67) {
+        } else if (x.keyCode == 67){
           var b = document.getElementById(x.key).play();
-        } else if (x.keyCode == 68) {
+        } else if (x.keyCode == 68){
           var b = document.getElementById(x.key).play();
-        }
-        else if(x.keyCode == 69){
+        } else if (x.keyCode == 69){
           var b = document.getElementById(x.key).play();
         }
       }

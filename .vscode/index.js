@@ -39,4 +39,16 @@
 // const a= prompt("enter the value")
 // value(a)
 
- 
+
+//////////////////////////////////////////////Revoision///////////////////////////////////////////////////
+
+var a="shubham"
+var b="bisht"
+
+console.log(`Name=>${a}<br>Last Name=>${b}`)
+
+
+
+
+
+
